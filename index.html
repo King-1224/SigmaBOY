@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show Public IP</title>
+</head>
+<body>
+    <h1>Your Public IP Address:</h1>
+    <p id="ip">Loading...</p>
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('ip').textContent = data.ip;
+            })
+            .catch(() => {
+                document.getElementById('ip').textContent = 'Unable to fetch IP address.';
+            });
+    </script>
+</body>
+</html>
+<img src="https://storage.googleapis.com/pod_public/1300/157553.jpg" alt="Sigma image">
+
+    <style>
+        img {
+            width: 190px;
+            height: 190px;
+            max-width: 600px;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+<img src="https://storage.googleapis.com/pod_public/1300/157553.jpg" alt="Sigma image">
+<img src="https://storage.googleapis.com/pod_public/1300/157553.jpg" alt="Sigma image">
+<img src="https://storage.googleapis.com/pod_public/1300/157553.jpg" alt="Sigma image">
